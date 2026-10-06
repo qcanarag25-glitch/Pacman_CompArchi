@@ -294,7 +294,7 @@ HIFRUT  .BY $44,$40,$40,$3E,$3E,$3C,$3A
 ;
 ; PACMAN SPEEDS - INDEXED TO SPEED1
 ;
-PACSPD  .BY SPEED6-SPEED1 ; SUPER SPEED MOD
+PACSPD  .BY SPEED6-SPEED1 ; MAX SPEED MOD (by setting speed SPEED6-SPEED1 which is constant fastest frame loader)
   .BY SPEED6-SPEED1
   .BY SPEED6-SPEED1
   .BY SPEED6-SPEED1
@@ -443,7 +443,7 @@ SPEED2  .BY 3,2,3,2 ;ghosts, level 2
 SPEED3  .BY 1,1,1,1 ;Pac-Man levels 1-3, ghosts levels 3-4
 SPEED4  .BY 2,2,2,2 ;Pac-Man level 4, ghosts level 5
 SPEED5  .BY 2,2,2,1 ;Pac-Man level 5, ghosts levels 6-7
-SPEED6  .BY 1,1,1,1 ;Pac-Man levels 6-7 only
+SPEED6  .BY 1,1,1,1 ;Pac-Man levels 6-7 only // FAST PACMAN MOD (UPDATES POSITION EVERY 1 FRAME)
 ;
 REVTAB  .BY $00,$0D,$0E,$00,$07,$00,$00,$00,$0B
 BLUREV  .BY $00,$02,$01,$00,$08,$00,$00,$00,$04
